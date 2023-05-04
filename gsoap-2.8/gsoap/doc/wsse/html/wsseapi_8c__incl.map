@@ -1,0 +1,5 @@
+base referer
+rect $wsseapi_8h.html 96,167 165,193
+rect $smdevp_8h.html 7,92 73,119
+rect $mecevp_8h.html 180,92 247,119
+rect $threads_8h.html 261,167 325,193

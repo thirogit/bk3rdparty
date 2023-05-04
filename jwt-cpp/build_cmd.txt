@@ -1,0 +1,1 @@
+cmake -G "NMake Makefiles"  "-DOPENSSL_INCLUDE_DIRS=C:\Program Files\PostgreSQL\9.6\include" "-DOPENSSL_LIBRARY_DIRS=C:\Program Files\PostgreSQL\9.6\lib" ../

@@ -1,0 +1,1 @@
+cmake -DBOOST_LIBRARYDIR=C:\Users\root\Desktop\bk\boost_1_55_0\stage\lib_x86 ../ -DBOOST_INCLUDEDIR=C:\Users\root\Desktop\bk\boost_1_55_0 -DBoost_USE_STATIC_LIBS=ON -G "NMake Makefiles"

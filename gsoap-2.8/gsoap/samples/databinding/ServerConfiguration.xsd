@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <schema targetNamespace="urn:configuration"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:a="urn:configuration"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  
+  <complexType name="cowserverservice">
+   <sequence>
+    <element name="serviceAddress" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+    <element name="farmNo" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+    <element name="userName" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+    <element name="password" type="xsd:string" minOccurs="1" maxOccurs="1"/>    
+   </sequence>
+   <attribute name="saveName" type="xsd:string" use="required"/>
+  </complexType>
+  
+  <complexType name="savedcowservices">
+    <sequence>
+     <element name="cowservice" type="a:cowserverservice" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  
+   <complexType name="gridColumn">
+    <attribute name="gridColumnId" type="xsd:int" use="required"/>
+    <sequence>
+		<element name="gridColumn" type="a:gridColumn" minOccurs="1" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  
+  
+   <complexType name="gridconfiguration">
+    <attribute name="gridId" type="xsd:int" use="required"/>
+    <sequence>
+		<element name="gridColumn" type="a:gridColumn" minOccurs="1" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  
+  
+   <complexType name="gridsconfiguration">
+    <sequence>
+     <element name="gridconfiguration" type="a:gridconfiguration" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  
+  
+  
+  <complexType name="userconfiguration">
+	<attribute name="userName" type="xsd:string" use="required"/>
+    <sequence>
+     <element name="cowservices" type="a:savedcowservices" minOccurs="1" maxOccurs="1"/>
+	 
+	 
+	 
+    </sequence>
+  </complexType>
+  
+  
+ 
+  
+  
+  
+  
+  <element name="configuration">
+	 <sequence>
+		
+	 </sequence>
+  </element>
+ </schema>
+

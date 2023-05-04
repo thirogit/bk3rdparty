@@ -1,0 +1,9 @@
+﻿  cdecode.c
+  cencode.c
+  Generowanie kodu...
+  base64.cc
+d:\bk\bk3rdparty\libb64-1.2\include\b64\encode.h(57): warning C4244: "=": konwersja z "std::streamsize" do "int", możliwa utrata danych
+d:\bk\bk3rdparty\libb64-1.2\include\b64\decode.h(13): warning C4005: "BUFFERSIZE": ponowna definicja makra
+  d:\bk\bk3rdparty\libb64-1.2\include\b64\decode.h(13): note: argumenty wiersza polecenia: zobacz poprzednią definicję „BUFFERSIZE”
+d:\bk\bk3rdparty\libb64-1.2\include\b64\decode.h(54): warning C4244: "=": konwersja z "std::streamsize" do "int", możliwa utrata danych
+  base64.vcxproj -> D:\bk\bk3rdparty\libb64-1.2\base64\VisualStudioProject\Debug\base64.lib

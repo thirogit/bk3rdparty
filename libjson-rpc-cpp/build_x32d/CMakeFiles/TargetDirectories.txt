@@ -1,0 +1,3 @@
+D:/bk/bk3rdparty/libjson-rpc-cpp/build_x32d/CMakeFiles/jsonrpc.dir
+D:/bk/bk3rdparty/libjson-rpc-cpp/build_x32d/CMakeFiles/edit_cache.dir
+D:/bk/bk3rdparty/libjson-rpc-cpp/build_x32d/CMakeFiles/rebuild_cache.dir

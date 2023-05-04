@@ -1,0 +1,6 @@
+D:/bk/bk3rdparty/pugixml-1.4/build_x86d/CMakeFiles/pugixml.dir
+D:/bk/bk3rdparty/pugixml-1.4/build_x86d/CMakeFiles/install/local.dir
+D:/bk/bk3rdparty/pugixml-1.4/build_x86d/CMakeFiles/install.dir
+D:/bk/bk3rdparty/pugixml-1.4/build_x86d/CMakeFiles/edit_cache.dir
+D:/bk/bk3rdparty/pugixml-1.4/build_x86d/CMakeFiles/rebuild_cache.dir
+D:/bk/bk3rdparty/pugixml-1.4/build_x86d/CMakeFiles/list_install_components.dir

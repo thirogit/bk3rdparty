@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestZipDlg", "TestZipDlg.vcproj", "{D942841A-D148-4EE4-99AC-C3FE20279159}"
+	ProjectSection(ProjectDependencies) = postProject
+		{66A34374-95D7-4891-8D7E-683C8E8844AA} = {66A34374-95D7-4891-8D7E-683C8E8844AA}
+	EndProjectSection
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "ZipArchive", "..\ZipArchive\ZipArchive.dsp", "{66A34374-95D7-4891-8D7E-683C8E8844AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Unicode Debug|Win32 = Unicode Debug|Win32
+		Unicode Release|Win32 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D942841A-D148-4EE4-99AC-C3FE20279159}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D942841A-D148-4EE4-99AC-C3FE20279159}.Debug|Win32.Build.0 = Debug|Win32
+		{D942841A-D148-4EE4-99AC-C3FE20279159}.Release|Win32.ActiveCfg = Release|Win32
+		{D942841A-D148-4EE4-99AC-C3FE20279159}.Release|Win32.Build.0 = Release|Win32
+		{D942841A-D148-4EE4-99AC-C3FE20279159}.Unicode Debug|Win32.ActiveCfg = Unicode Debug|Win32
+		{D942841A-D148-4EE4-99AC-C3FE20279159}.Unicode Debug|Win32.Build.0 = Unicode Debug|Win32
+		{D942841A-D148-4EE4-99AC-C3FE20279159}.Unicode Release|Win32.ActiveCfg = Unicode Release|Win32
+		{D942841A-D148-4EE4-99AC-C3FE20279159}.Unicode Release|Win32.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

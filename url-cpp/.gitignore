@@ -1,0 +1,10 @@
+# Binaries and build artifacts
+*.o
+bench
+test-all
+
+# Coverage
+*.gcda
+*.gcno
+*.gcov
+

@@ -1,0 +1,3 @@
+D:/bk/bk3rdparty/url-cpp/build_x86/CMakeFiles/urlcpp.dir
+D:/bk/bk3rdparty/url-cpp/build_x86/CMakeFiles/edit_cache.dir
+D:/bk/bk3rdparty/url-cpp/build_x86/CMakeFiles/rebuild_cache.dir

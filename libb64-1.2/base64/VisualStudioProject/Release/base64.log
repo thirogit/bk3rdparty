@@ -1,0 +1,8 @@
+﻿  cdecode.c
+  cencode.c
+  base64.cc
+d:\bk\bk3rdparty\libb64-1.2\include\b64\encode.h(57): warning C4244: '=': conversion from 'std::streamsize' to 'int', possible loss of data
+d:\bk\bk3rdparty\libb64-1.2\include\b64\decode.h(13): warning C4005: 'BUFFERSIZE': macro redefinition
+  d:\bk\bk3rdparty\libb64-1.2\base64\base64.cc: note: see previous definition of 'BUFFERSIZE'
+d:\bk\bk3rdparty\libb64-1.2\include\b64\decode.h(54): warning C4244: '=': conversion from 'std::streamsize' to 'int', possible loss of data
+  base64.vcxproj -> D:\bk\bk3rdparty\libb64-1.2\base64\VisualStudioProject\Release\base64.lib

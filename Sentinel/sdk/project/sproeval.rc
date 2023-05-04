@@ -1,0 +1,1110 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "sproeval.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+RNBO                    ICON    DISCARDABLE     "RNBO.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CFG_LIB_PARMS_DIALOG DIALOG DISCARDABLE  104, 41, 188, 176
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Configure Library Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Get Library Parameters",IDC_GET_CFG_RB,"Button",
+                    BS_AUTORADIOBUTTON,34,17,125,12
+    CONTROL         "Set Library Parameters",IDC_SET_CFG_RB,"Button",
+                    BS_AUTORADIOBUTTON,34,32,125,12
+    CONTROL         "Driver Type",IDC_DRVR_TYPE_FUNC_RB,"Button",
+                    BS_AUTORADIOBUTTON,32,71,125,12
+    CONTROL         "Machine Type",IDC_MACH_TYPE_FUNC_RB,"Button",
+                    BS_AUTORADIOBUTTON,32,84,125,12
+    CONTROL         "Timing",IDC_DELAY_FUNC_RB,"Button",BS_AUTORADIOBUTTON,
+                    32,97,125,12
+    CONTROL         "Interrupts Masked",IDC_MASK_INTS_FUNC_RB,"Button",
+                    BS_AUTORADIOBUTTON,32,110,125,12
+    CONTROL         "Operating System Parameters",IDC_OS_PARMS_FUNC_RB,
+                    "Button",BS_AUTORADIOBUTTON,32,123,125,12
+    CONTROL         "Port Parameters",IDC_PORT_PARAMS_FUNC_RB,"Button",
+                    BS_AUTORADIOBUTTON,32,136,125,12
+    PUSHBUTTON      "Initialize",IDOK,13,158,50,14
+    DEFPUSHBUTTON   "Set",IDC_SET_GET,69,158,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,158,50,14
+    GROUPBOX        "Command",IDC_COMMAND_GRP,26,5,136,43
+    GROUPBOX        "Parameter Types",IDC_FUNCTION_GRP,26,55,136,98
+END
+
+SET_OS_PARMS_DIALOG DIALOG DISCARDABLE  150, 63, 121, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Set OS Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "WIN32s",IDC_OS_TYPE_WIN32s_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,18,97,12
+    CONTROL         "Windows 95",IDC_OS_TYPE_WIN95_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,36,97,12
+    CONTROL         "Windows NT",IDC_OS_TYPE_WINNT_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,54,97,12
+    CONTROL         "OS/2 Warp",IDC_OS_TYPE_OS2_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,72,97,12
+    CONTROL         "Autodetect OS Type",IDC_OS_TYPE_AUTO_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,90,97,12
+    DEFPUSHBUTTON   "OK",IDOK,8,115,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,64,115,50,14
+    GROUPBOX        "Operating System Types",IDC_OS_TYPES_GRP,6,3,109,106
+END
+
+SET_DRVR_TYPE_DIALOG DIALOG DISCARDABLE  152, 65, 118, 102
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Driver Type"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Local Driver",IDC_DRVR_TYPE_LOCAL_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,23,60,12
+    CONTROL         "System Driver",IDC_DRVR_TYPE_SYS_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,40,55,12
+    CONTROL         "Autodetect Driver Type",IDC_DRVR_TYPE_AUTO_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,57,86,12
+    DEFPUSHBUTTON   "OK",IDOK,6,82,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,62,82,50,14
+    GROUPBOX        "Driver Types",IDC_DRVR_TYPES_GRP,6,7,106,69
+END
+
+SET_PORT_PARMS_DIALOG DIALOG DISCARDABLE  69, 65501, 310, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Port Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_LOG_PORT_NUM,112,7,29,12,NOT WS_TABSTOP
+    EDITTEXT        IDC_PHY_PORT_ADDR,112,23,29,12
+    EDITTEXT        IDC_SYS_PORT_NUM,112,41,29,12
+    CONTROL         "Collision Detection",IDC_PORT_CONT_MET_RBW_CB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,81,118,12
+    CONTROL         "Hardware Polling",IDC_PORT_CONT_MET_HW_CB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,99,118,12
+    CONTROL         "Mask Interrupts",IDC_PORT_CONT_MET_MASK_INTS_CB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,117,118,12
+    CONTROL         "Disable System Interrupts",
+                    IDC_PORT_CONT_MET_SYS_INTS_CB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,135,118,12
+    CONTROL         "Use Driver's Default",IDC_PORT_CONT_MET_AUTO_CB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,153,118,12
+    EDITTEXT        IDC_PORT_CONT_RC,263,9,29,12
+    EDITTEXT        IDC_PORT_CONT_RI,263,26,29,12
+    EDITTEXT        IDC_DEV_RC,263,42,29,12
+    CONTROL         "IBM AT Parallel Port",IDC_PORT_TYPE_IBM_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,148,78,150,12
+    CONTROL         "IBM PS/2 DMA Parallel Port",IDC_PORT_TYPE_IBM_DMA_RB,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,148,95,150,12
+    CONTROL         "NEC PC-9800 Series Parallel Port",IDC_PORT_TYPE_NEC_RB,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,148,112,150,12
+    CONTROL         "Fujitsu FMR Series Parallel Port",IDC_PORT_TYPE_FMR_RB,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,148,129,150,12
+    CONTROL         "Autodetect Parallel Port Type",IDC_PORT_TYPE_AUTO_RB,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,148,146,150,12
+    PUSHBUTTON      "OK",IDOK,14,181,36,14
+    DEFPUSHBUTTON   "Set",IDC_SET_PORT_PARMS,55,181,36,14
+    PUSHBUTTON      "Cancel",IDCANCEL,96,181,36,14
+    LTEXT           "Logical Port Number:",-1,14,9,95,8
+    LTEXT           "Physical Port Address (hex):",-1,14,26,95,8
+    GROUPBOX        "Port Contention Methods",IDC_PORT_CONT_MET_GRP,7,64,131,
+                    108
+    GROUPBOX        "Port Types",IDC_PORT_TYPES_GRP,142,64,163,96
+    LTEXT           "Port Contention Retry Interval:",-1,151,29,109,8
+    LTEXT           "Port Contention Retry Count:",-1,151,13,109,8
+    LTEXT           "Device Retry Count:",-1,151,46,109,8
+    LTEXT           "System Port Number:",-1,14,43,95,8
+    CONTROL         "Validate Port",IDC_VALIDATE_PORT_CB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,149,177,109,12
+    GROUPBOX        "Flags",IDC_FLAGS_GB,142,166,163,27
+END
+
+SET_MASK_INTS_DIALOG DIALOG DISCARDABLE  146, 108, 118, 84
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Interrupts To Mask"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Timer",IDC_MASK_INT_TIMER_CB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,16,73,12
+    CONTROL         "LPT1",IDC_MASK_INT_LPT1_CB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,31,71,12
+    CONTROL         "LPT2",IDC_MASK_INT_LPT2_CB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,46,73,12
+    DEFPUSHBUTTON   "OK",IDOK,4,66,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,64,66,50,14
+    GROUPBOX        "Interrupts",IDC_INTS_GRP,4,4,109,57
+END
+
+SET_MACH_TYPE_DIALOG DIALOG DISCARDABLE  158, 111, 145, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Machine Type Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "IBM AT/PS/2",IDC_MACH_TYPE_IBM_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,15,21,116,12
+    CONTROL         "NEC PC-9800 Series",IDC_MACH_TYPE_NEC_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,15,37,116,12
+    CONTROL         "Fujitsu FMR Series",IDC_MACH_TYPE_FMR_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,15,53,116,12
+    CONTROL         "Autodetect Machine Type",IDC_MACH_TYPE_AUTO_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,15,69,116,12
+    DEFPUSHBUTTON   "OK",IDOK,18,91,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,77,91,50,14
+    GROUPBOX        "Machine Types",IDC_MACH_TYPES_GRP,8,6,128,80
+END
+
+SET_DELAY_DIALOG DIALOG DISCARDABLE  146, 83, 116, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Timing Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SET_DELAY_VALUE,48,12,42,12
+    DEFPUSHBUTTON   "OK",IDOK,3,37,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,37,50,14
+    LTEXT           "Value",-1,26,15,20,8
+END
+
+GET_DELAY_DIALOG DIALOG DISCARDABLE  89, 81, 114, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Timing Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_GET_DELAY_VALUE,47,18,42,8,ES_READONLY | WS_DISABLED | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,32,37,50,14
+    LTEXT           "Delay:",-1,24,18,21,8
+END
+
+GET_MASK_INTS_DIALOG DIALOG DISCARDABLE  146, 108, 109, 84
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Interrupts Masked"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Timer",IDC_MASK_INT_TIMER_CB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,35,11,39,12
+    CONTROL         "LPT1",IDC_MASK_INT_LPT1_CB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,35,26,39,12
+    CONTROL         "LPT2",IDC_MASK_INT_LPT2_CB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,35,41,39,12
+    DEFPUSHBUTTON   "OK",IDOK,29,66,50,14
+END
+
+ACTIVATE_DIALOG DIALOG DISCARDABLE  81, 50, 159, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Activate"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        ACT_ID,6,20,59,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        ACT_WP,78,28,69,12
+    EDITTEXT        ACT_AP1,78,52,69,12
+    EDITTEXT        ACT_AP2,78,76,69,12
+    DEFPUSHBUTTON   "Activate",IDOK,31,109,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,109,40,14
+    LTEXT           "Cell Address (hex)",-1,5,9,62,8
+    LTEXT           "Write (hex)",-1,78,18,54,8
+    LTEXT           "Activate #1 (hex)",-1,78,43,67,8
+    GROUPBOX        "Passwords",-1,74,7,80,89
+    LTEXT           "Activate #2 (hex)",-1,78,69,67,8
+END
+
+FIND_DIALOG DIALOG DISCARDABLE  88, 93, 160, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "FindFirstUnit"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        FF_ID,79,6,63,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Find",IDOK,24,32,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,93,32,40,14
+    LTEXT           "Developer ID (hex)",-1,6,8,69,8
+END
+
+DEC_DIALOG DIALOG DISCARDABLE  60, 55, 159, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Decrement"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        DEC_ID,6,20,59,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        DEC_WP,78,20,72,12
+    DEFPUSHBUTTON   "Decrement",IDOK,33,46,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,85,46,40,14
+    LTEXT           "Cell Address (hex)",-1,5,9,62,8
+    LTEXT           "Write Password (hex)",-1,78,10,76,8
+END
+
+INFO_DIALOG DIALOG DISCARDABLE  39, 39, 154, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CompanyInfo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,63,66,27,13
+    ICON            "RNBO",-1,3,4,20,20
+    LTEXT           "Rainbow Technologies, Inc.",-1,25,6,89,8
+    LTEXT           "50 Technology  Irvine, CA 92618 USA",-1,25,14,126,10
+    LTEXT           "Phone:",-1,12,31,28,9
+    LTEXT           "Fax:",-1,12,39,28,8
+    LTEXT           "(714) 450-7300    (800) 852-8569",-1,44,31,113,8
+    LTEXT           "(714) 450-7450",-1,44,39,113,8
+    LTEXT           "URL:",-1,12,48,28,8
+    LTEXT           "http://www.rainbow.com",-1,44,48,113,8
+    CONTROL         "",-1,"Static",SS_BLACKFRAME,23,26,124,1
+END
+
+MAIN_DIALOG DIALOGEX 56, 4, 399, 317
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY
+CAPTION "Sentinel SuperPro Evaluation Program"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Format&Packet",SP_API_FMT,16,42,76,13
+    PUSHBUTTON      "Initiali&ze",SP_API_INIT,16,55,76,13
+    PUSHBUTTON      "Se&tProtocol",SP_API_SETPROTOCOL,16,68,76,13
+    PUSHBUTTON      "&FindFirstUnit",SP_API_FF,16,81,76,13
+    PUSHBUTTON      "Find&NextUnit",SP_API_FN,16,94,76,13
+    PUSHBUTTON      "Set&HeartBeat",SP_API_SETHEARTBEAT,16,107,76,13
+    PUSHBUTTON      "&Read",SP_API_RD,16,120,76,13
+    PUSHBUTTON      "E&xtendedRead",SP_API_XRD,16,133,76,13
+    PUSHBUTTON      "&Write",SP_API_WT,16,146,76,13
+    PUSHBUTTON      "&Overwrite",SP_API_OWT,16,159,76,13
+    PUSHBUTTON      "&Query",SP_API_QRY,16,172,76,13
+    PUSHBUTTON      "&Activate",SP_API_ACT,16,185,76,13
+    PUSHBUTTON      "&Decrement",SP_API_DEC,16,198,76,13
+    PUSHBUTTON      "Get&Version",SP_API_GV,16,211,76,13
+    PUSHBUTTON      "GetHardLi&mit",SP_API_GET_HARDLMT,16,224,76,13
+    PUSHBUTTON      "GetF&ullStatus",SP_API_GFS,16,237,76,13
+    PUSHBUTTON      "GetKe&yInfo",SP_API_GET_KEY_INFO,16,250,76,13
+    PUSHBUTTON      "GetSu&bLicense",SP_API_GET_SUB_LIC,16,263,76,13
+    PUSHBUTTON      "Release&License",SP_API_RELEASE,16,276,76,13
+    PUSHBUTTON      "Enum&Server",SP_API_ENUMSRVR,16,289,76,13
+    PUSHBUTTON      "&GetContactServer",SP_API_GET_CONTACT_SERVER,295,42,81,
+                    13
+    PUSHBUTTON      "Set&ContactServer",SP_API_SET_CONTACT_SERVER,295,60,81,
+                    13
+    PUSHBUTTON      "&KeyView",SP_VW,295,138,81,13
+    PUSHBUTTON      "Company&Info",SP_NFO,295,154,81,13
+    PUSHBUTTON      "Help",SP_HLP,295,170,81,13
+    PUSHBUTTON      "&Exit",IDCANCEL,295,285,81,13
+    LTEXT           "- Reads the data value from a cell.",IDC_STATIC,108,122,
+                    158,9
+    LTEXT           "- Formats the API packet.",IDC_STATIC,108,44,158,9
+    LTEXT           "- Initializes the API packet.",IDC_STATIC,108,57,158,9
+    LTEXT           "- Gets the version number of the Sentinel System Driver.",
+                    IDC_STATIC,108,213,176,9
+    LTEXT           "- Finds a key with the specified developer ID.",
+                    IDC_STATIC,108,83,166,9
+    LTEXT           "- Finds the next key with the same developer ID.",
+                    IDC_STATIC,108,96,158,9
+    LTEXT           "- Reads the data value and access code from a cell.",
+                    IDC_STATIC,108,135,172,9
+    LTEXT           "- Writes a data value and access code to a cell.",
+                    IDC_STATIC,108,148,158,9
+    LTEXT           "- Writes over the data value and access code in a cell.",
+                    IDC_STATIC,108,161,177,9
+    LTEXT           "- Decreases the value of a counter cell by one.",
+                    IDC_STATIC,108,200,168,9
+    LTEXT           "- Sends a string to a cell and returns the response.",
+                    IDC_STATIC,108,174,164,9
+    LTEXT           "- Activates an inactive algotithm cell.",IDC_STATIC,108,
+                    187,158,9
+    GROUPBOX        "Miscelleneous",IDC_STATIC,290,127,92,63
+    ICON            "RNBO",IDC_STATIC,18,8,20,20
+    LTEXT           "Sentinel SuperPro Evaluation Program.",IDC_STATIC,41,9,
+                    153,10
+    LTEXT           "Copyright (C) 1991-2002 Rainbow Technologies Inc. All rights reserved.",
+                    IDC_STATIC,41,19,226,10
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYFRAME,14,5,265,25
+    GROUPBOX        "API Commands",IDC_STATIC,12,32,84,276
+    GROUPBOX        "ContactServer APIs",IDC_STATIC,291,32,91,48
+    LTEXT           "- Releases an issued license or sublicense(s).",
+                    IDC_STATIC,109,278,158,9
+    LTEXT           "- Checkout a sublicense from the specified cell.",
+                    IDC_STATIC,108,265,158,9
+    LTEXT           "- Gets status information from last API issued.",
+                    IDC_STATIC,108,239,158,9
+    LTEXT           "- Get the number of licenses supported by a key.",
+                    IDC_STATIC,108,226,158,9
+    LTEXT           "- Enumerates the number of servers in the subnet.",
+                    IDC_STATIC,108,291,158,9
+    LTEXT           "- Gets information about a key on a particular server.",
+                    IDC_STATIC,108,252,175,9
+    LTEXT           "- Sets the heartbeat timeout for an issued license.",
+                    IDC_STATIC,108,109,158,9
+    LTEXT           "- Sets the protocol for client server communication.",
+                    IDC_STATIC,108,70,158,9
+    GROUPBOX        "",IDC_STATIC,290,275,92,30
+END
+
+OWRITE_DIALOG DIALOG DISCARDABLE  81, 50, 162, 138
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Overwrite"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        OW_ID,5,20,59,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        OW_AC,5,52,59,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        OW_VAL,5,84,59,12
+    EDITTEXT        OW_PW_1,75,31,79,12
+    EDITTEXT        OW_PW_2,75,57,79,12
+    EDITTEXT        OW_PW_3,75,80,79,12
+    DEFPUSHBUTTON   "Overwrite",IDOK,21,110,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,110,40,14
+    LTEXT           "Cell Address (hex)",-1,5,9,62,8
+    LTEXT           "Access Code",-1,5,40,62,10
+    LTEXT           "Value (hex)",-1,5,73,42,8
+    LTEXT           "Overwrite 1 (hex)",-1,75,20,62,10
+    LTEXT           "Overwrite 2 (hex)",-1,75,46,60,9
+    LTEXT           "Write (hex)",-1,75,70,41,10
+    GROUPBOX        "Passwords",OW_WPW,71,8,86,90
+END
+
+QUERY_DIALOG DIALOG DISCARDABLE  36, 45, 208, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Query"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        QRY_ID,6,20,59,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        QRY_QS,73,21,128,12,ES_AUTOHSCROLL
+    EDITTEXT        QRY_RSLT,73,50,128,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        QRY_RSLT_32,73,80,128,12,ES_READONLY
+    DEFPUSHBUTTON   "Query",IDOK,27,110,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,133,110,40,14
+    LTEXT           "Cell Address (hex)",-1,5,9,62,8
+    LTEXT           "Query Data (hex)",-1,73,10,61,8
+    LTEXT           "Query Result (hex)",-1,73,39,67,8
+    LTEXT           "Query Result (32 bit) (hex)",-1,73,69,93,8
+END
+
+READ_DIALOG DIALOG DISCARDABLE  81, 66, 159, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Read"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        RD_ID,10,17,59,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        RD_VAL,80,17,71,13,ES_READONLY
+    DEFPUSHBUTTON   "Read",IDOK,16,47,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,47,40,14
+    LTEXT           "Cell Address (hex)",-1,9,6,62,8
+    LTEXT           "Value (hex)",-1,80,7,48,9
+END
+
+VERSION_DIALOG DIALOG DISCARDABLE  83, 50, 191, 82
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "GetVersion"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,70,55,50,14
+    LTEXT           "Major Version\t:",-1,7,11,59,8
+    LTEXT           "Minor Version\t:",-1,7,19,59,8
+    LTEXT           "Revision\t:",-1,7,27,59,8
+    LTEXT           "OS Driver Type\t:",-1,7,35,59,8
+    LTEXT           "",SP_VER_MAJOR,68,11,115,8
+    LTEXT           "",SP_VER_MINOR,68,19,115,8
+    LTEXT           "",SP_VER_REV,68,27,115,8
+    LTEXT           "",SP_VER_OSTYPE,68,35,115,8
+END
+
+VIEW_DIALOG DIALOG DISCARDABLE  46, 5, 286, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "KeyView"
+FONT 8, "Courier New"
+BEGIN
+    LISTBOX         VIEW_TEXT,9,6,269,155,WS_TABSTOP
+    PUSHBUTTON      "Update",IDOK,99,163,33,14
+    PUSHBUTTON      "Cancel",IDCANCEL,154,163,33,14
+END
+
+WRITE_DIALOG DIALOG DISCARDABLE  81, 50, 159, 108
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Write"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        WR_ID,7,20,60,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        WR_AC,6,54,60,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        WR_PW,78,20,71,12
+    EDITTEXT        WR_VAL,78,54,71,12
+    DEFPUSHBUTTON   "Write",IDOK,17,82,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,82,40,14
+    LTEXT           "Cell Address (hex)",-1,5,9,62,8
+    LTEXT           "Access Code",-1,7,43,51,10
+    LTEXT           "Write Password (hex)",-1,78,9,72,8
+    LTEXT           "Value (hex)",-1,78,43,65,8
+END
+
+XREAD_DIALOG DIALOG DISCARDABLE  81, 50, 135, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "ExtendedRead"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        XR_ID,8,23,59,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        XR_VAL,77,22,53,12,ES_READONLY
+    EDITTEXT        XR_AC,77,48,53,12,ES_READONLY
+    DEFPUSHBUTTON   "Read",IDOK,15,74,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,79,74,40,14
+    LTEXT           "Cell Address (hex)",-1,8,12,62,8
+    LTEXT           "Value (hex)",-1,77,12,44,10
+    LTEXT           "Access Code",-1,77,38,48,10
+END
+
+GET_PORT_PARMS_DIALOG DIALOG DISCARDABLE  72, 65510, 317, 217
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Get Port Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SYS_PORT_NUM,110,28,29,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        IDC_PHY_PORT_ADDR,110,42,29,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        IDC_MAPPED_ADDR,110,56,29,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "Collision Detection",IDC_PORT_CONT_MET_RBW_CB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,88,118,12
+    CONTROL         "Hardware Polling",IDC_PORT_CONT_MET_HW_CB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,101,118,12
+    CONTROL         "System Port Contention",IDC_PORT_CONT_MET_SYS_CB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,114,118,12
+    CONTROL         "Mask Interrupts",IDC_PORT_CONT_MET_MASK_INTS_CB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,127,118,12
+    CONTROL         "Disable System Interrupts",
+                    IDC_PORT_CONT_MET_SYS_INTS_CB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,140,118,12
+    CONTROL         "Windows Critical Section",IDC_PORT_CONT_MET_WCS_CB,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,153,118,12
+    CONTROL         "NT Raise IRQ Level",IDC_PORT_CONT_MET_NT_RIRQL_CB,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,166,118,12
+    EDITTEXT        IDC_PORT_CONT_RC,264,10,29,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        IDC_PORT_CONT_RI,264,23,29,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        IDC_DEV_RC,264,36,29,12,ES_READONLY | WS_DISABLED | NOT 
+                    WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "IBM AT Parallel Port",IDC_PORT_TYPE_IBM_RB,"Button",
+                    BS_AUTORADIOBUTTON,153,68,151,12
+    CONTROL         "IBM PS/2 DMA Parallel Port",IDC_PORT_TYPE_IBM_DMA_RB,
+                    "Button",BS_AUTORADIOBUTTON,153,85,151,12
+    CONTROL         "NEC PC-9800 Series Parallel Port",IDC_PORT_TYPE_NEC_RB,
+                    "Button",BS_AUTORADIOBUTTON,153,102,151,12
+    CONTROL         "Fujitsu FMR Series Parallel Port",IDC_PORT_TYPE_FMR_RB,
+                    "Button",BS_AUTORADIOBUTTON,153,119,151,12
+    CONTROL         "Validate Port",IDC_VALIDATE_PORT_CB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,155,154,151,12
+    CONTROL         "User Defined Port",IDC_USER_DEF_PORT_CB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,155,167,151,12
+    CONTROL         "System Contention Installed",IDC_CONT_HNDLR_INST_CB,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,180,151,12
+    PUSHBUTTON      "OK",IDOK,18,195,50,14
+    DEFPUSHBUTTON   "Get",IDC_GET_PORT_PARMS,74,195,51,14
+    EDITTEXT        IDC_LOG_PORT_NUM,110,14,29,12,NOT WS_TABSTOP
+    LTEXT           "Logical Port Number:",-1,10,14,96,9
+    LTEXT           "Physical Port Address:",-1,10,41,96,9
+    GROUPBOX        "Port Contention Methods",IDC_PORT_CONT_MET_GRP,8,74,132,
+                    112
+    GROUPBOX        "Port Types",IDC_PORT_TYPES_GRP,146,54,162,80
+    LTEXT           "Port Contention Retry Interval:",-1,148,26,115,8
+    LTEXT           "Port Contention Retry Count:",-1,148,13,115,8
+    LTEXT           "Device Retry Count:",-1,148,39,115,9
+    LTEXT           "System Port Number:",-1,10,28,96,8
+    GROUPBOX        "Flags",IDC_FLAGS_GB,147,139,162,61
+    LTEXT           "Mapped Address:",-1,10,56,96,8
+END
+
+GET_OS_PARMS_DIALOG DIALOG DISCARDABLE  150, 41, 121, 152
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Get OS Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Windows 3.x",IDC_OS_TYPE_WIN3x_RB,"Button",
+                    BS_AUTORADIOBUTTON,13,23,93,12
+    CONTROL         "WIN32s",IDC_OS_TYPE_WIN32s_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,40,93,12
+    CONTROL         "Windows 95",IDC_OS_TYPE_WIN95_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,57,93,12
+    CONTROL         "Windows NT",IDC_OS_TYPE_WINNT_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,74,93,12
+    CONTROL         "OS/2 Warp",IDC_OS_TYPE_OS2_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,91,93,12
+    DEFPUSHBUTTON   "OK",IDOK,35,134,50,14
+    LTEXT           "Version:",IDC_VER_ST,7,118,27,11
+    EDITTEXT        IDC_OS_VER,36,119,77,11,ES_READONLY | WS_DISABLED | NOT 
+                    WS_BORDER | NOT WS_TABSTOP
+    GROUPBOX        "Operating System",IDC_OS_TYPES_GRP,6,8,109,102
+END
+
+GET_DRVR_TYPE_DIALOG DIALOG DISCARDABLE  152, 65, 118, 84
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Get Driver Type"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Local Driver",IDC_DRVR_TYPE_LOCAL_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,23,89,12
+    CONTROL         "System Driver",IDC_DRVR_TYPE_SYS_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,40,89,12
+    DEFPUSHBUTTON   "OK",IDOK,34,65,50,14
+    GROUPBOX        "Driver Type",IDC_DRVR_TYPES_GRP,6,7,106,51
+END
+
+GET_MACH_TYPE_DIALOG DIALOG DISCARDABLE  158, 111, 126, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Get Machine Type"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "IBM AT or PS/2",IDC_MACH_TYPE_IBM_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,15,21,99,12
+    CONTROL         "NEC PC-9800 Series",IDC_MACH_TYPE_NEC_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,15,37,99,12
+    CONTROL         "Fujitsu FMR Series",IDC_MACH_TYPE_FMR_RB,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,15,53,99,12
+    DEFPUSHBUTTON   "OK",IDOK,38,77,50,14
+    GROUPBOX        "Machine Type",IDC_MACH_TYPES_GRP,8,6,110,63
+END
+
+SET_CONTACT_SRV_DIALOG DIALOG DISCARDABLE  0, 0, 215, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SetContactServer "
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,32,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,50,50,14
+    LTEXT           "Server Name",IDC_SRV_STATIC,17,22,49,14
+    COMBOBOX        ID_SRV_NAME,78,19,130,52,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+GET_CONTACT_SRV DIALOG DISCARDABLE  0, 0, 184, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GetContactServer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        ID_CONTACT_SRV,71,11,105,18,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "OK",IDOK,62,45,50,14
+    LTEXT           "Contact Server",IDC_STATIC,6,16,51,14
+END
+
+RELEASE_LIC_DIALOG DIALOG DISCARDABLE  0, 0, 172, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ReleaseLicense"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        CELL_ADD,87,16,59,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        NO_OF_LIC,87,42,59,12
+    DEFPUSHBUTTON   "OK",IDOK,19,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,73,50,14
+    LTEXT           "Cell Address (hex)",IDC_STATIC,16,19,62,8
+    LTEXT           "No of Sublicenses to be released",IDC_STATIC,18,43,60,
+                    16
+END
+
+GET_SUB_LIC_DIALOG DIALOG DISCARDABLE  0, 0, 168, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GetSubLicense"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        CELL_ADD,91,17,59,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,21,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,50,50,14
+    LTEXT           "Cell Address (hex)",IDC_STATIC,14,21,62,8
+END
+
+ENUM_SRVR_DLG DIALOG DISCARDABLE  0, 0, 243, 108
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EnumServer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        COMBO_ENSRVR_FLG,85,5,150,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DEVID,86,21,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUMSRVRS,85,39,60,14,ES_AUTOHSCROLL
+    COMBOBOX        COMBO_SRVR_INFO,85,59,151,66,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Execute",IDOK,26,82,58,14
+    PUSHBUTTON      "Cancel",IDCANCEL,160,81,59,14
+    LTEXT           "Enum Server Flag ",IDC_STATIC,8,7,62,10
+    LTEXT           "Dev Id (Hex) ",IDC_STATIC,8,24,62,10
+    LTEXT           "Num Of Servers ",IDC_STATIC,8,42,62,10
+    LTEXT           "Server Info ",IDC_STATIC,8,60,62,10
+END
+
+GET_KEY_INFO_DLG DIALOG DISCARDABLE  0, 0, 172, 140
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GetKeyInfo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_DEVID,84,7,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HRD_LMT,84,25,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_LIC_INUSE,84,44,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NUM_TIMED_OUT,84,63,60,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_HIGHEST_IN_USE,84,84,60,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    DEFPUSHBUTTON   "Next Key",IDOK,19,113,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,112,50,14
+    LTEXT           "Enter Dev Id (Hex) :",IDC_STATIC,8,11,62,10
+    LTEXT           "Lic In Use ",IDC_STATIC,8,47,62,10
+    LTEXT           "Num Timed Out ",IDC_STATIC,8,65,62,10
+    LTEXT           "Hard Limit ",IDC_STATIC,8,28,62,10
+    LTEXT           "Highest In Use ",IDC_STATIC,8,87,62,10
+END
+
+SET_PROTOCOL_DIALOG DIALOG DISCARDABLE  0, 0, 198, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SetProtocol"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_CMBPROTOCOL,60,12,119,40,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,31,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,128,45,50,14
+    LTEXT           "Protocol Flag ",IDC_STATIC,11,15,44,8
+END
+
+SET_HEARTBEAT_DIALOG DIALOG DISCARDABLE  0, 0, 186, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SetHeartBeat"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        HEARTBEAT_EDIT,79,15,93,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,31,44,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,45,50,14
+    LTEXT           "HeartBeat(secs) ",IDC_STATIC,17,17,58,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""sproeval.h""\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "DEC_DIALOG", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 66
+    END
+
+    "MAIN_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 382
+        BOTTOMMARGIN, 308
+        HORZGUIDE, 160
+    END
+
+    "OWRITE_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 159
+    END
+
+    "READ_DIALOG", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 69
+    END
+
+    "VERSION_DIALOG", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 70
+    END
+
+    "SET_CONTACT_SRV_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    "GET_CONTACT_SRV", DIALOG
+    BEGIN
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    "RELEASE_LIC_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    "GET_SUB_LIC_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    "ENUM_SRVR_DLG", DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    "GET_KEY_INFO_DLG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    "SET_PROTOCOL_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+    END
+
+    "SET_HEARTBEAT_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,3,0,0
+ PRODUCTVERSION 6,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "MSVC Evaluation Program.\0"
+            VALUE "CompanyName", "Rainbow\0"
+            VALUE "FileDescription", "MSVC Evaluation Program.\0"
+            VALUE "FileVersion", "6, 3, 0, 0\0"
+            VALUE "InternalName", "MSVC Interface\0"
+            VALUE "LegalCopyright", "Copyright(C) 1991-2002 Rainbow Technologies Inc. \0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "sproeval.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Sentinel SuperPro\0"
+            VALUE "ProductVersion", "6, 3, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SP_SUCCESS          "SP_SUCCESS"
+    IDS_SP_INVALID_FUNCTION_CODE "SP_INVALID_FUNCTION_CODE"
+    IDS_SP_INVALID_PACKET   "SP_INVALID_PACKET"
+    IDS_SP_UNIT_NOT_FOUND   "SP_UNIT_NOT_FOUND"
+    IDS_SP_ACCESS_DENIED    "SP_ACCESS_DENIED"
+    IDS_SP_INVALID_MEMORY_ADDRESS "SP_INVALID_MEMORY_ADDRESS"
+    IDS_SP_INVALID_ACCESS_CODE "SP_INVALID_ACCESS_CODE"
+    IDS_SP_PORT_IS_BUSY     "SP_PORT_IS_BUSY"
+    IDS_SP_WRITE_NOT_READY  "SP_WRITE_NOT_READY"
+    IDS_SP_NO_PORT_FOUND    "SP_NO_PORT_FOUND"
+    IDS_SP_ALREADY_ZERO     "SP_ALREADY_ZERO"
+    IDS_SP_DRIVER_OPEN_ERROR "SP_DRIVER_OPEN_ERROR"
+    IDS_SP_DRIVER_NOT_INSTALLED "SP_DRIVER_NOT_INSTALLED"
+    IDS_SP_IO_COMMUNICATIONS_ERROR "SP_IO_COMMUNICATIONS_ERROR"
+    IDS_SP_INVALID_VERSION  "SP_INVALID_VERSION"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SP_PACKET_TOO_SMALL "SP_PACKET_TOO_SMALL"
+    IDS_SP_INVALID_PARAMETER "SP_INVALID_PARAMETER"
+    IDS_SP_MEM_ACCESS_ERROR "SP_MEM_ACCESS_ERROR"
+    IDS_SP_VERSION_NOT_SUPPORTED "SP_VERSION_NOT_SUPPORTED"
+    IDS_SP_OS_NOT_SUPPORTED "SP_OS_NOT_SUPPORTED"
+    IDS_SP_QUERY_TOO_LONG   "SP_QUERY_TOO_LONG"
+    IDS_SP_INTERNAL_ERROR   "SP_INTERNAL_ERROR"
+    IDS_ERR_NO_ADDR         "Specify cell address to proceed."
+    IDS_ERR_NO_VALUE        "No Value Specified !"
+    IDS_ERR_NO_ACCESS_CODE  "Specify an access code to proceed."
+    IDS_ERR_INVALID_INPUT   "Invalid Input !"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_ACTIVATE_FAILED "Activate failed!"
+    IDS_DECREMENT           "Decrement"
+    IDS_ERR_DEC_FAILED      "Decrement failed!"
+    IDS_DEC_SUCCESS         "Decrement successful!"
+    IDS_ACTIVATE_ALGO       "Activate"
+    IDS_ACTIVATE_SUCCESS    "Activate successful!"
+    IDS_ERR_NO_DEV_ID       "Specify developerID to proceed."
+    IDS_FINDFIRST           "FindFirstUnit"
+    IDS_ERR_FF_FAILED       "FindFirstUnit failed!"
+    IDS_FF_SUCCESS          "FindFirstUnit successful!"
+    IDS_OVERWRITE           "Overwrite"
+    IDS_OVERWRITE_SUCCESS   "Overwrite successful!"
+    IDS_ERR_OVERWRITE_FAILED "Overwrite failed!"
+    IDS_QUERY               "Query"
+    IDS_ERR_INVALID_QUERY_DATA 
+                            "Query data must be in hex. The length of data must be even and between 8 to 112."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NO_QUERY_DATA   "Specify query data to proceed."
+    IDS_ERR_QUERY_FAILED    "Query failed!"
+    IDS_ERR_READ_FAILED     "Read failed!"
+    IDS_ERR_WRITE_FAILED    "Write failed!"
+    IDS_WRITE_SUCCESS       "Write successful! "
+    IDS_WRITE               "Write"
+    IDS_ERR_XREAD_FAILED    "ExtendedRead failed!"
+    IDS_ERR_FINDNEXT_FAILED "FindNextUnit failed!"
+    IDS_FINDNEXT            "FindNextUnit"
+    IDS_MORE_INFO           "For more information, please refer to the SuperPro Microsoft VC Interface.pdf"
+    IDS_HELP                "Help"
+    IDS_ERR_INIT_FAILED     "Initialize failed!"
+    IDS_SP_STATUS           "SP_STATUS ="
+    IDS_SP_FULL_STATUS      "GetFullStatus ="
+    IDS_GET_FULL_STATUS     "GetFullStatus"
+    IDS_RESULT              "Result = "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INIT                "Initialize"
+    IDS_INIT_SUCCESS        "Initialize successful!"
+    IDS_WIN3x_LOCAL_DRVR    "(Windows 3.x Local Driver)"
+    IDS_WINNT_SYS_DRVR      "(Windows NT System Driver)"
+    IDS_DRVR_UNDEFINED      "(Unknown Driver Type)"
+    IDS_ERR_VERSION_FAILED  "GetVersion failed!"
+    IDS_SP_MEM_ALIGNMENT_ERROR "SP_MEM_ALIGNMENT_ERROR"
+    IDS_ERR_FMT_FAILED      "FormatPacket failed!"
+    IDS_FMT                 "FormatPacket"
+    IDS_FMT_SUCCESS         "FormatPacket successful!"
+    IDS_SP_INVALID_COMMAND  "SP_INVALID_COMMAND"
+    IDS_SP_PORT_ALLOCATION_FAILURE "SP_PORT_ALLOCATION_FAILURE"
+    IDS_SP_PORT_RELEASE_FAILURE "SP_PORT_RELEASE_FAILURE"
+    IDS_SP_ACQUIRE_PORT_TIMEOUT "SP_ACQURE_PORT_TIMEOUT"
+    IDS_ERR_RELEASE_FAILED  "ReleaseLicense failed!"
+    IDS_SP_SIGNAL_NOT_SUPPORTED "SP_SIGNAL_NOT_SUPPORTED"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SP_UNKNOWN_MACHINE  "SP_UNKNOWN_MACHINE"
+    IDS_SP_SYS_API_ERROR    "SP_SYS_API_ERROR"
+    IDS_SP_UNIT_IS_BUSY     "SP_UNIT_IS_BUSY"
+    IDS_SP_INVALID_PORT_TYPE "SP_INVALID_PORT_TYPE"
+    IDS_SP_INVALID_MACH_TYPE "SP_INVALID_MACH_TYPE"
+    IDS_SP_INVALID_IRQ_MASK "SP_INVALID_IRQ_MASK"
+    IDS_SP_INVALID_CONT_METHOD "SP_INVALID_CONT_METHOD"
+    IDS_SP_INVALID_PORT_FLAGS "SP_INVALID_PORT_FLAGS"
+    IDS_SP_INVALID_LOG_PORT_CFG "SP_INVALID_LOG_PORT_CFG"
+    IDS_SP_INVALID_OS_TYPE  "SP_INVALID_OS_TYPE"
+    IDS_SP_INVALID_LOG_PORT_NUM "SP_INVALID_LOG_PORT_NUM"
+    IDS_SP_INVALID_ROUTER_FLGS "SP_INVALID_ROUTER_FLGS"
+    IDS_CFG_LIB             "RNBOsproCfgLibParams"
+    IDS_SP_INIT_NOT_CALLED  "SP_INIT_NOT_CALLED"
+    IDS_WIN95_SYS_DRVR      "(Windows 95 System Driver)"
+    IDS_OS2_SYS_DRVR        "(OS/2 System Driver)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DOSRM_LOCAL_DRVR    "(DOS Real Mode Local Driver)"
+    IDS_WIN3x_SYS_DRVR      "(Windows 3.x System Driver)"
+    IDS_WIN32s_LOCAL_DRVR   "(WIN32s Local Driver)"
+    IDS_SP_DRIVER_TYPE_NOT_SUPPORTED "SP_DRVR_TYPE_NOT_SUPPORTED"
+    IDS_SP_FAIL_ON_DRIVER_COMM "SP_FAIL_ON_DRIVER_COMM"
+    IDS_ERR_GET_SUB_LIC_FAILED "GetSubLicense failed!"
+    IDS_INVALID_OPERATION   "SetContactServer failed!"
+    IDS_ERR_GET_HRDLMT      "GetHardLimit failed!"
+    IDS_GET_HRDLMT          "GetHardLimit"
+    IDS_ENSRVR_FAILED       "EnumServer failed!"
+    IDS_GET_KEY_INFO_FAILED "GetKeyInfo failed!"
+    IDS_NW_LOCAL_DRVR       "(Novell System Driver)"
+    IDS_SETPROTOCOL_FAILED  "SetProtocol failed!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SETHEARTBEAT_FAILED "SetHeartBeat failed!"
+    IDS_GET_SUB_LIC_SUCCESS "GetSubLicense successful!"
+    IDS_GET_SUB_LIC         "GetSubLicense"
+    IDS_REL_LIC_SUCCESS     "ReleaseLicense successful!"
+    IDS_REL_LIC             "ReleaseLicense"
+    IDS_SET_CON_SRVR_SUCCESS "SetContactServer successful!"
+    IDS_SET_CON_SRVR        "SetContactServer"
+    IDS_ENUM_SERVER         "EnumServer"
+    IDS_GET_KEY_INFO        "GetKeyInfo"
+    IDS_GET_VERSION         "GetVersion"
+    IDS_GET_CON_SRVR        "GetContactServer"
+    IDS_GETCONSRVR_FAIL     "GetContactServer failed!"
+    IDS_NO_CON_SRVR         "Specify ContaceServer name to proceed."
+    IDS_ENUM_SUCC           "EnumServer successful! Click Server Info box to see details."
+    IDS_GET_CON_SRVR_SUCC   "GetContactServer successful!"
+    IDS_SETHEARTBEAT_SUCC   "SetHeartBeat successful!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SETPROTOCOL_SUCC    "SetProtocol successful!"
+    IDS_GET_KEY_INFO_SUCC   "GetKeyInfo successful!"
+    IDS_ENSRVR_SUCC         "EnumServer successful!"
+    IDS_GET_HRDLMT_SUCC     "GetHardLimit successful!"
+    IDS_ERR_XREAD_SUCC      "ExtendedRead successful!"
+    IDS_ERR_FINDNEXT_SUCC   "FindNextUnit successful!"
+    IDS_ERR_READ_SUCC       "Read successful!"
+    IDS_ERR_QUERY_SUCC      "Query successful!"
+    IDS_ERR_GETVER_SUCC     "GetVersion successful!"
+    IDS_INVALID_DEVID       "DeveloperID must be in hex with length not excceding 4 digits."
+    IDS_ERR_NO_HB_SPECIFY   "Specify HeartBeat value to proceed."
+    IDS_ERR_INVALID_HB_VALUE 
+                            "HeartBeat value must be -1 or between 60 to 2592000."
+    IDS_SET_HEARTBEAT       "SetHeartBeat"
+    IDS_ERR_NO_WRITE_VALUE  "Specify data to be written to proceed."
+    IDS_ERR_INVALID_WRITE_INPUT 
+                            "Data to be written must be in hex with length not excceding 4 digits."
+    IDS_ERR_NO_WRITE_PASSWORD "Specify Write  Password to proceed."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NO_OVERWRITE1_PASSWORD "Specify Overwrite Password1 to proceed."
+    IDS_ERR_NO_OVERWRITE2_PASSWORD "Specify Overwrite Password2 to proceed."
+    IDS_ERR_NO_ACTIVATE2_PASSWORD "Specify Activate Password2 to proceed."
+    IDS_ERR_NO_ACTIVATE1_PASSWORD "Specify Activate Password1 to proceed."
+    IDS_ERR_INVALID_WRITE_PASSWORD 
+                            "Write Password must be in hex with length not exceeding 4 digits."
+    IDS_ERR_INVALID_OVERWRITE1_PASSWORD 
+                            "Overwrite Password1 must be in hex with length not exceeding 4 digits."
+    IDS_ERR_INVALID_OVERWRITE2_PASSWORD 
+                            "Overwrite Password2 must be in hex with length not exceeding 4 digits."
+    IDS_ERR_INVALID_ACTIVATE2_PASSWORD 
+                            "Activate Password2 must be in hex with length not exceeding 4 digits."
+    IDS_ERR_INVALID_ACTIVATE1_PASSWORD 
+                            "Activate Password1 must be in hex with length not exceeding 4 digits."
+    IDS_ERR_NO_NUM_LIC_VALUE 
+                            "Specify number of license to release in input box to proceed."
+    IDS_ERR_INVALID_NUM_LIC_VALUE 
+                            "Number of sublicense to release must be an integer between 0 to 65535."
+    IDS_ERR_NO_SETHERATBEAT_VALUE "Specify HeartBeat value to proceed."
+    IDS_ERR_INVALID_SETHERATBEAT_VALUE 
+                            "Heartbeat value must be an integer between 60 to 2592000. Enter -1 for infinite heartbeat."
+    IDS_ERR_NO_NUMSERVER_VALUE "Specify number of servers to proceed."
+    IDS_ERR_INVALID_NUMSERVER_VALUE 
+                            "Number of servers must be between 1 to 10."
+    IDS_INVALID_CON_SRVR    "ContactServer name  length must not exceed 63."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

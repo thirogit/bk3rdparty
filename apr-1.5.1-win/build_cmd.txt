@@ -1,0 +1,1 @@
+cmake -DCMAKE_INSTALL_PREFIX=C:\Users\root\Desktop\bk\bk3rdparty\apr-1.5.1-win\installation -G "NMake Makefiles" -DINSTALL_PDB=OFF ../

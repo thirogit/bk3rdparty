@@ -1,0 +1,1 @@
+cmake -DCMAKE_INSTALL_PREFIX=C:\Users\root\Desktop\bk\bk3rdparty\apr-util-1.5.4-win\installation -DAPR_INCLUDE_DIR=C:\Users\root\Desktop\bk\bk3rdparty\apr-1.5.1-win\installation\include -DAPR_LIBRARIES=C:\Users\root\Desktop\bk\bk3rdparty\apr-1.5.1-win\installation\lib\libapr-1.lib -G "NMake Makefiles" -DINSTALL_PDB=OFF ../

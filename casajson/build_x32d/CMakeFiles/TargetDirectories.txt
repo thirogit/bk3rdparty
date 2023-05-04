@@ -1,0 +1,3 @@
+D:/bk/bk3rdparty/casajson/build_x32d/CMakeFiles/casajson.dir
+D:/bk/bk3rdparty/casajson/build_x32d/CMakeFiles/edit_cache.dir
+D:/bk/bk3rdparty/casajson/build_x32d/CMakeFiles/rebuild_cache.dir

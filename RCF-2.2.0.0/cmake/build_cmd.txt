@@ -1,0 +1,1 @@
+cmake -G "NMake Makefiles" -DBOOST_ROOT=D:\boost_1_61_0 -DCMAKE_BUILD_TYPE=Release ../cmake

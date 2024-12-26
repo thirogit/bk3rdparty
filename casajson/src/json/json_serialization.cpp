@@ -27,7 +27,6 @@
 #include "casajson/json.h"
 
 #include <stdio.h>
-#include <boost/lexical_cast.hpp>
 
 #ifndef _WIN32
 #define __STDC_FORMAT_MACROS
@@ -216,13 +215,13 @@ void json::details::_Number::format(std::basic_string<wchar_t>& stream) const
     if(m_number.m_type != number::type::double_type)
     {
         if (m_number.m_type == number::type::signed_type)
-            stream += boost::lexical_cast<std::wstring>(m_number.m_intval);
+            stream += std::to_wstring(m_number.m_intval);
         else
-            stream += boost::lexical_cast<std::wstring>(m_number.m_uintval);        
+            stream += std::to_wstring(m_number.m_uintval);        
     }
     else
     {
-		stream += boost::lexical_cast<std::wstring>(m_number.m_value);
+		stream += std::to_wstring(m_number.m_value);
         // #digits + 2 to avoid loss + 1 for the sign + 1 for decimal point + 5 for exponent (e+xxx) + 1 for null terminator
        /* const size_t tempSize = std::numeric_limits<double>::digits10 + 10;
         wchar_t tempBuffer[tempSize];

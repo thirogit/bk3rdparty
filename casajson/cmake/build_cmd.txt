@@ -1,1 +1,0 @@
-cmake -G "NMake Makefiles" -DBOOST_ROOT=C:\dev\my\boost_1_61_0 -DCMAKE_BUILD_TYPE=Debug .

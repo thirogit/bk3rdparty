@@ -22,7 +22,8 @@ class casajsonRecipe(ConanFile):
     exports_sources = "CMakeLists.txt", "src/*", "include/*"
     
     def requirements(self):
-        pass
+        self.requires("boost/1.83.0")
+        
 
     def config_options(self):
         if self.settings.os == "Windows":

@@ -12,7 +12,9 @@
 /mpdecimal-2.4.0/mpdecimal
 /mpdecimal-2.4.0/tests/**
 /mpdecimal-2.4.0/vcbuild/dist64/**
+/mpdecimal-2.4.0/build-release/**
 /RCF-2.2.0.0/build_x64d/**
+/RCF-2.2.0.0/build/**
 /RCF-2.0.0.2685/demo/cmake/bin
 /RCF-2.0.1.100/cmake/bin/**
 /mpdecimal-2.3/bin/**
@@ -38,7 +40,8 @@
 /libjson-rpc-cpp/build_x64/**
 /libjson-rpc-cpp/cmake/bin/**
 /casajson/cmake/bin/**
-/casajson/build_x64/**
+/casajson/build/**
+/casajson/test_package/build/**
 /RCF-2.2.0.0/cmake/build/**
 /RCF-2.2.0.0/cmake/bin/**
 /RCF-2.2.0.0/cmake/.vs/**
@@ -55,4 +58,5 @@
 /apr-1.6.2-win/installation/**
 /cpprestsdk-master/Release/**
 /restbed/build_x64/**
-/url-cpp/build_x64/**
+/url-cpp/build/**
+/url-cpp/bin/**

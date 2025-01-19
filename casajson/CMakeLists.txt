@@ -1,14 +1,19 @@
 cmake_minimum_required(VERSION 3.23)
 project(casajson CXX)
 
+find_package(Boost)
 
 SET(SRC_ROOT ${CMAKE_SOURCE_DIR}/src )
 SET(INC_ROOT ${CMAKE_SOURCE_DIR}/include )
-
 	
 ADD_DEFINITIONS( -DUSE_WIDECHAR -D_ASYNCRT_EXPORT )
 
 ADD_LIBRARY(casajson)
+
+if(Boost_FOUND)
+    include_directories(${Boost_INCLUDE_DIRS}) 
+endif()
+
 
 TARGET_SOURCES(casajson 
 	PUBLIC

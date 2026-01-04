@@ -1,0 +1,1 @@
+. "/workspaces/bk3rdparty/typestring/deactivate_conanbuildenv.sh"

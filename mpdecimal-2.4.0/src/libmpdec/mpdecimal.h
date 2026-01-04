@@ -30,6 +30,8 @@
 #define MPDECIMAL_H
 
 #define USE_WIDECHAR
+#include <wchar.h>
+#include <wctype.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -142,7 +144,12 @@ typedef size_t mpd_size_t; /* unsigned size type */
 #define MPD_SSIZE_MAX INT64_MAX
 #define MPD_SSIZE_MIN INT64_MIN
 typedef int64_t mpd_ssize_t;
+
+#ifdef USE_WIDECHAR
+#define _mpd_strtossize wcstoll
+#else
 #define _mpd_strtossize strtoll
+#endif
 
 /* decimal arithmetic */
 #define MPD_RADIX 10000000000000000000ULL  /* 10**19 */
@@ -186,8 +193,11 @@ typedef size_t mpd_size_t; /* unsigned size type */
 #define MPD_SSIZE_MAX INT32_MAX
 #define MPD_SSIZE_MIN INT32_MIN
 typedef int32_t mpd_ssize_t;
+#ifdef USE_WIDECHAR
+#define _mpd_strtossize wcstol
+#else
 #define _mpd_strtossize strtol
-
+#endif
 /* decimal arithmetic */
 #define MPD_RADIX 1000000000UL  /* 10**9 */
 #define MPD_RDIGITS 9

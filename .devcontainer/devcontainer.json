@@ -1,6 +1,6 @@
 {
 	"name": "bk3rdparty toolchain",
-	"image": "bkdevcontainer",
+	"image": "bkdevcontainer:v1",
 	
 	"customizations": {
 		"vscode": {

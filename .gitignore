@@ -13,6 +13,7 @@
 /mpdecimal-2.4.0/tests/**
 /mpdecimal-2.4.0/vcbuild/dist64/**
 /mpdecimal-2.4.0/build-release/**
+/mpdecimal-2.4.0/build-debug/**
 /RCF-2.2.0.0/build_x64d/**
 /RCF-2.2.0.0/build/**
 /RCF-2.0.0.2685/demo/cmake/bin
@@ -22,9 +23,7 @@
 /Prof-UIS/**/*.old
 /RCF-2.0.1.100/cmake/build/**
 /mpdecimal-2.3/bin/**
-/libjson-rpc-cpp/Project/Debug/**
-/libjson-rpc-cpp/Project/x64/**
-/libjson-rpc-cpp/project/.vs/**
+/libjson-rpc-cpp/build/**
 /apr-1.5.2-unix/**/*.o
 /apr-1.5.2-unix/**/*.lo
 /apr-1.5.2-unix/.libs/**

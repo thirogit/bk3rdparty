@@ -1,0 +1,1 @@
+. "/workspaces/bk3rdparty/typestring/conanbuildenv.sh"

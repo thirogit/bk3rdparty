@@ -2,17 +2,17 @@ from conan import ConanFile
 from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout, CMakeDeps
 
 
-class casajsonRecipe(ConanFile):
-    name = "casajson"
-    version = "1.1"
+class jsonrpcRecipe(ConanFile):
+    name = "jsonrpc"
+    version = "1.0"
     package_type = "library"
 
     # Optional metadata
     license = "MIT"
     author = "Kamil Wisniewski thiro@poczta.onet.pl"
     url = "https://github.com/thirogit/bk3rdparty"
-    description = "JSON serialization/deserialization library"
-    topics = ("json")
+    description = "JSON-RPC library"
+    topics = ("json","rpc")
 
     # Binary configuration
     settings = "os", "compiler", "build_type", "arch"
@@ -22,8 +22,9 @@ class casajsonRecipe(ConanFile):
     exports_sources = "CMakeLists.txt", "src/*", "include/*"
     
     def requirements(self):
-        self.requires("boost/[>=1.83.0]")
-        
+        self.requires("casajson/1.1")
+        self.requires("boost/1.83.0")
+        pass    
 
     def config_options(self):
         if self.settings.os == "Windows":
@@ -52,5 +53,5 @@ class casajsonRecipe(ConanFile):
         cmake.install()
 
     def package_info(self):
-        self.cpp_info.libs = ["casajson"]
+        self.cpp_info.libs = ["jsonrpc"]
 

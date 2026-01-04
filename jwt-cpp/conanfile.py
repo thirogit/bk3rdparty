@@ -3,8 +3,8 @@ from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout, CMakeDeps
 
 
 class casajsonRecipe(ConanFile):
-    name = "casajson"
-    version = "1.1"
+    name = "jwtcpp"
+    version = "1.1.0"
     package_type = "library"
 
     # Optional metadata
@@ -22,7 +22,7 @@ class casajsonRecipe(ConanFile):
     exports_sources = "CMakeLists.txt", "src/*", "include/*"
     
     def requirements(self):
-        self.requires("boost/[>=1.83.0]")
+        self.requires("boost/1.83.0")
         
 
     def config_options(self):

@@ -22,7 +22,7 @@ class rcfRecipe(ConanFile):
     exports_sources = "CMakeLists.txt", "src/*", "include/*"
     
     def requirements(self):
-        self.requires("boost/[>1.83.0]")
+        self.requires("boost/[>=1.83.0]")
         
 
     def config_options(self):

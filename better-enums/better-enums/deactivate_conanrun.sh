@@ -1,0 +1,1 @@
+. "C:\dev\repos\bk3rdparty\better-enums\better-enums\deactivate_conanrunenv.sh"

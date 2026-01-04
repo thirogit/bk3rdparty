@@ -53,9 +53,9 @@ extern "C" {
   #define __GNUC_STDC_INLINE__ 1
 #endif
 #if defined(__GNUC__) && !defined(__INTEL_COMPILER)
-  #define UNUSED __attribute__((unused))
+  #define MPD_UNUSED __attribute__((unused))
 #else
-  #define UNUSED
+  #define MPD_UNUSED
 #endif
 #if (defined(__linux__) || defined(__FreeBSD__) || defined(__APPLE__)) && \
     defined(__GNUC__) && __GNUC__ >= 4 && !defined(__INTEL_COMPILER)
@@ -706,7 +706,7 @@ mpd_uint_t mpd_lsd(mpd_uint_t word);
 mpd_ssize_t mpd_digits_to_size(mpd_ssize_t digits);
 /* number of digits in the exponent, undefined for MPD_SSIZE_MIN */
 int mpd_exp_digits(mpd_ssize_t exp);
-int mpd_iscanonical(const mpd_t *dec UNUSED);
+int mpd_iscanonical(const mpd_t *dec MPD_UNUSED);
 int mpd_isfinite(const mpd_t *dec);
 int mpd_isinfinite(const mpd_t *dec);
 int mpd_isinteger(const mpd_t *dec);

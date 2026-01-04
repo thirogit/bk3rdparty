@@ -253,7 +253,7 @@ mpd_exp_digits(mpd_ssize_t exp)
 
 /* Canonical */
 ALWAYS_INLINE int
-mpd_iscanonical(const mpd_t *dec UNUSED)
+mpd_iscanonical(const mpd_t *dec MPD_UNUSED)
 {
     return 1;
 }

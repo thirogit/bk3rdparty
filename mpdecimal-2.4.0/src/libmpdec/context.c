@@ -33,7 +33,7 @@
 
 
 void
-mpd_dflt_traphandler(mpd_context_t *ctx UNUSED)
+mpd_dflt_traphandler(mpd_context_t *ctx MPD_UNUSED)
 {
     raise(SIGFPE);
 }
